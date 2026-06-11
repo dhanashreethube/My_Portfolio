@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanashree Thube | Senior Full Stack Developer</title>
+    <meta name="description" content="Senior Full Stack Developer specializing in React.js, TypeScript, and Node.js. Based in Pune, India. 3.5+ years of experience building scalable enterprise dashboards and modular component libraries.">
+    <meta name="keywords" content="Dhanashree Thube, Full Stack Developer, React.js, Node.js, Frontend Developer, Web Developer Pune, Software Engineer, React Specialist">
+    <meta name="author" content="Dhanashree Thube">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dhanashree Thube | Senior Full Stack Developer">
+    <meta property="og:description" content="Senior Full Stack Developer specializing in React.js, TypeScript, and Node.js. Based in Pune, India.">
+    <meta property="og:image" content="assets/images/profile.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Dhanashree Thube | Senior Full Stack Developer">
+    <meta property="twitter:description" content="Senior Full Stack Developer specializing in React.js, TypeScript, and Node.js. Based in Pune, India.">
+    <meta property="twitter:image" content="assets/images/profile.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="index.css?v=2">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Sticky Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" id="nav-logo-link">
+                <span class="logo-dot"></span>Dhanashree<span>.</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" id="link-home">Home</a>
+                <a href="#about" class="nav-link" id="link-about">About</a>
+                <a href="#experience" class="nav-link" id="link-experience">Experience</a>
+                <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+                <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+                <a href="#education" class="nav-link" id="link-education">Education</a>
+                <a href="#certifications" class="nav-link" id="link-certifications">Milestones</a>
+                <a href="#contact" class="nav-link nav-btn" id="link-contact">Get In Touch</a>
+            </nav>
+
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Menu">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-blobs">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-text reveal reveal-left">
+                    <span class="hero-badge"><i data-lucide="sparkles"></i> Open to Opportunities</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight-text">Dhanashree Thube</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I'm a <span id="typewriter-text" class="typewriter-container">Frontend Developer</span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-tagline">
+                        Building clean, scalable web experiences — one component at a time.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary" id="hero-btn-projects">View Projects <i data-lucide="arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Contact Me</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/dhanashree-thube" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon" id="hero-social-linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="https://github.com/dhanashreethube" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon" id="hero-social-github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        </a>
+                        <a href="mailto:dhanashreepthube@gmail.com" aria-label="Email" class="social-icon" id="hero-social-email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper reveal reveal-right">
+                    <div class="profile-card-glow"></div>
+                    <div class="profile-image-container">
+                        <img src="assets/images/profile.jpg" alt="Dhanashree Thube" class="profile-img">
+                    </div>
+                    <div class="floating-badge badge-exp">
+                        <span class="badge-num">3.5+</span>
+                        <span class="badge-lbl">Years Exp</span>
+                    </div>
+                    <div class="floating-badge badge-loc">
+                        <i data-lucide="map-pin"></i>
+                        <span>Pune, IN</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll Down" id="hero-scroll-btn">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">A glimpse into my world</h2>
+                    <p class="section-subtitle">Learn more about who I am, what I do, and what inspires me</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-story reveal reveal-left">
+                        <div class="story-card">
+                            <p class="story-paragraph">
+                                My journey started a little differently. After completing my <strong>B.E. in Electronics & Telecommunication</strong>, I prepared for the <strong class="text-highlight">UPSC Engineering Services exam</strong> — one of the most rigorous technical examinations in the country. That chapter shaped how I think: it taught me the discipline to tackle hard, long-term challenges, stay committed under pressure, and trust the process even when results take time.
+                            </p>
+                            <p class="story-paragraph">
+                                Eventually, I found my way into software through a postgraduate program at <strong>C-DAC, Pune</strong> — and it felt like the right fit from day one.
+                            </p>
+                            <p class="story-paragraph">
+                                Since then, I've been working as a Full Stack Developer at <strong>Trinamix</strong>. When I'm not coding, you'll find me travelling, painting, or picking up something new in tech.
+                            </p>
+                            
+                            <div class="philosophy-quote">
+                                <i class="quote-icon" data-lucide="quote"></i>
+                                <blockquote>
+                                    "Not every chapter leads where you expected. Some just make you stronger for the one that does."
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-details reveal reveal-right">
+                        <div class="details-grid">
+                            <div class="detail-card">
+                                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                                <div class="detail-info">
+                                    <h3>Based in</h3>
+                                    <p>Pune, India</p>
+                                </div>
+                            </div>
+                            <div class="detail-card">
+                                <div class="detail-icon"><i data-lucide="briefcase"></i></div>
+                                <div class="detail-info">
+                                    <h3>Experience</h3>
+                                    <p>3.5+ Years</p>
+                                </div>
+                            </div>
+                            <div class="detail-card">
+                                <div class="detail-icon"><i data-lucide="building"></i></div>
+                                <div class="detail-info">
+                                    <h3>Current Employer</h3>
+                                    <p>Trinamix</p>
+                                </div>
+                            </div>
+                            <div class="detail-card interests-card">
+                                <div class="detail-icon"><i data-lucide="heart"></i></div>
+                                <div class="detail-info">
+                                    <h3>Interests</h3>
+                                    <div class="interests-tags">
+                                        <span><i data-lucide="music-4"></i> Music</span>
+                                        <span><i data-lucide="palette"></i> Painting</span>
+                                        <span><i data-lucide="compass"></i> Travelling</span>
+                                        <span><i data-lucide="terminal"></i> Tech Trends</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-tag">Career History</span>
+                    <h2 class="section-title">Journey & Impact</h2>
+                    <p class="section-subtitle">A glimpse into my hands-on experience, problem-solving approach, and contributions to real-world applications.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Item -->
+                    <div class="timeline-item reveal reveal-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Dec 2022 – Present</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-title-group">
+                                    <h3>Senior System Engineer</h3>
+                                    <h4 class="company">Trinamix</h4>
+                                </div>
+                                <span class="location-badge"><i data-lucide="map-pin"></i> Pune, India</span>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>
+                                    <span class="bullet-icon"><i data-lucide="check-circle-2"></i></span>
+                                    <span>Engineered scalable enterprise dashboards using <strong>React.js</strong> and <strong>Node.js</strong> for HR and performance management workflows.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon"><i data-lucide="check-circle-2"></i></span>
+                                    <span>Architected a modular, reusable React component library used across multiple application modules, accelerating development velocity.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon"><i data-lucide="check-circle-2"></i></span>
+                                    <span>Implemented advanced state management using <strong>Redux Toolkit</strong> with a normalized store architecture for seamless data updates.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon"><i data-lucide="check-circle-2"></i></span>
+                                    <span>Designed and integrated secure <strong>RESTful APIs</strong> for real-time data rendering and complex operations across system dashboard views.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon"><i data-lucide="check-circle-2"></i></span>
+                                    <span>Built an automated notification engine covering timesheets, compliance alerts, and reimbursement workflows, improving organizational efficiency.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-icon"><i data-lucide="check-circle-2"></i></span>
+                                    <span>Developed highly responsive UIs using <strong>TypeScript</strong>, JavaScript, <strong>Tailwind CSS</strong>, and <strong>Material UI</strong> to provide enterprise users with intuitive interfaces.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-tag">Showcase</span>
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-subtitle">A selection of things I've built, exploring frontend paradigms and full-stack integration.</p>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card reveal reveal-up">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/project-streaming.png" alt="Video Streaming Website" class="project-img">
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-card-title-row">
+                                <h3 class="project-title">Video Streaming Website</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/dhanashreethube/Video_Streaming_Website" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository" title="GitHub">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    </a>
+                                    <a href="https://video-streaming-website-537.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live Demo" title="Live Demo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="project-type">Personal Project</span>
+                            <p class="project-description">
+                                A personal project exploring video streaming UI – built to understand media handling, component architecture, custom control states, and responsive styling in React.
+                            </p>
+                        </div>
+                        <div class="project-card-footer">
+                            <div class="project-tech-tags">
+                                <span>React.js</span>
+                                <span>JavaScript</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal reveal-up" style="transition-delay: 0.15s;">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/project-food.png" alt="Food App" class="project-img">
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-card-title-row">
+                                <h3 class="project-title">Food App</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/dhanashreethube/Food_App" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository" title="GitHub">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    </a>
+                                    <a href="https://keen-starburst-7844bc.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live Demo" title="Live Demo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="project-type">Personal Project</span>
+                            <p class="project-description">
+                                A dynamic food ordering application built to practice React fundamentals, including reusable component design, local and global state management, and responsive dynamic item rendering.
+                            </p>
+                        </div>
+                        <div class="project-card-footer">
+                            <div class="project-tech-tags">
+                                <span>React.js</span>
+                                <span>JavaScript</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-tag">My Arsenal</span>
+                    <h2 class="section-title">Tech Stack</h2>
+                    <p class="section-subtitle">Technologies I work with.</p>
+                </div>
+            </div>
+
+            <!-- Infinite Marquee Container (Full Width) -->
+            <div class="marquee-wrapper reveal reveal-scale">
+                <div class="marquee-track">
+                    <!-- Marquee Item Set 1 -->
+                    <div class="marquee-item"><span>React.js</span></div>
+                    <div class="marquee-item"><span>Next.js</span></div>
+                    <div class="marquee-item"><span>JavaScript</span></div>
+                    <div class="marquee-item"><span>TypeScript</span></div>
+                    <div class="marquee-item"><span>HTML5</span></div>
+                    <div class="marquee-item"><span>CSS3</span></div>
+                    <div class="marquee-item"><span>Tailwind CSS</span></div>
+                    <div class="marquee-item"><span>SCSS</span></div>
+                    <div class="marquee-item"><span>Material UI</span></div>
+                    <div class="marquee-item"><span>Bootstrap</span></div>
+                    <div class="marquee-item"><span>Node.js</span></div>
+                    <div class="marquee-item"><span>Express.js</span></div>
+                    <div class="marquee-item"><span>REST APIs</span></div>
+                    <div class="marquee-item"><span>Redux Toolkit</span></div>
+                    <div class="marquee-item"><span>MongoDB</span></div>
+                    <div class="marquee-item"><span>MySQL</span></div>
+                    <div class="marquee-item"><span>Docker</span></div>
+                    <div class="marquee-item"><span>Git</span></div>
+                    <div class="marquee-item"><span>Postman</span></div>
+                    
+                    <!-- Duplicate Set for Seamless Loop -->
+                    <div class="marquee-item"><span>React.js</span></div>
+                    <div class="marquee-item"><span>Next.js</span></div>
+                    <div class="marquee-item"><span>JavaScript</span></div>
+                    <div class="marquee-item"><span>TypeScript</span></div>
+                    <div class="marquee-item"><span>HTML5</span></div>
+                    <div class="marquee-item"><span>CSS3</span></div>
+                    <div class="marquee-item"><span>Tailwind CSS</span></div>
+                    <div class="marquee-item"><span>SCSS</span></div>
+                    <div class="marquee-item"><span>Material UI</span></div>
+                    <div class="marquee-item"><span>Bootstrap</span></div>
+                    <div class="marquee-item"><span>Node.js</span></div>
+                    <div class="marquee-item"><span>Express.js</span></div>
+                    <div class="marquee-item"><span>REST APIs</span></div>
+                    <div class="marquee-item"><span>Redux Toolkit</span></div>
+                    <div class="marquee-item"><span>MongoDB</span></div>
+                    <div class="marquee-item"><span>MySQL</span></div>
+                    <div class="marquee-item"><span>Docker</span></div>
+                    <div class="marquee-item"><span>Git</span></div>
+                    <div class="marquee-item"><span>Postman</span></div>
+                </div>
+            </div>
+
+            <div class="container skills-grid-container">
+                <div class="skills-category-grid reveal reveal-up">
+                    
+                    <!-- Frontend -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i data-lucide="layout"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>React.js</li>
+                            <li>Next.js</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>TypeScript</li>
+                            <li>HTML5 / CSS3</li>
+                            <li>Tailwind CSS / SCSS</li>
+                            <li>Material UI / Bootstrap</li>
+                        </ul>
+                    </div>
+
+                    <!-- Backend & APIs -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i data-lucide="server"></i>
+                            <h3>Backend & APIs</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>REST APIs</li>
+                            <li>Axios</li>
+                            <li>Webpack</li>
+                        </ul>
+                    </div>
+
+                    <!-- State Management & DB -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i data-lucide="database"></i>
+                            <h3>State & Database</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>Redux</li>
+                            <li>Redux Toolkit</li>
+                            <li>Context API</li>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools & Practices -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i data-lucide="terminal"></i>
+                            <h3>Tools & Practices</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>Git / GitHub</li>
+                            <li>Docker</li>
+                            <li>Postman</li>
+                            <li>CI/CD</li>
+                            <li>Agile / Scrum</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-tag">Learning Journey</span>
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">Academic foundations in engineering and computing.</p>
+                </div>
+
+                <div class="education-list">
+                    
+                    <!-- Edu 1 -->
+                    <div class="education-item reveal reveal-up">
+                        <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+                        <div class="edu-details">
+                            <span class="edu-date">Mar 2022 – Sep 2022</span>
+                            <h3>Post Graduate Diploma in Advanced Computing</h3>
+                            <h4 class="edu-inst">C-DAC, Pune</h4>
+                            <p class="edu-desc">Intensive postgraduate program focusing on advanced software engineering, backend architectures, web application development, and database management systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- Edu 2 -->
+                    <div class="education-item reveal reveal-up">
+                        <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+                        <div class="edu-details">
+                            <span class="edu-date">Aug 2013 – Jul 2016</span>
+                            <h3>Bachelor of Engineering — Electronics & Telecommunication</h3>
+                            <h4 class="edu-inst">Bharati Vidyapeeth College of Engineering for Women, Pune</h4>
+                            <p class="edu-desc">Rigorous engineering program covering core electronics, systems engineering, digital signal processing, microcontrollers, and computing logic.</p>
+                        </div>
+                    </div>
+
+                    <!-- Edu 3 -->
+                    <div class="education-item reveal reveal-up">
+                        <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+                        <div class="edu-details">
+                            <span class="edu-date">Jul 2010 – Jul 2013</span>
+                            <h3>Diploma — Electronics & Telecommunication</h3>
+                            <h4 class="edu-inst">Adsul Polytechnic, Ahmednagar</h4>
+                            <p class="edu-desc">Undergraduate diploma program delivering structural fundamentals in telecommunication engineering, hardware schematics, and programming bases.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements Section -->
+        <section id="certifications" class="certifications-section section-padding">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-tag">Milestones</span>
+                    <h2 class="section-title">Certifications & Achievements</h2>
+                    <p class="section-subtitle">Key achievements that shaped my professional path.</p>
+                </div>
+
+                <div class="milestones-grid">
+                    
+                    <!-- Certifications Card -->
+                    <div class="milestone-card reveal reveal-left">
+                        <div class="milestone-card-header">
+                            <i data-lucide="award" class="milestone-icon"></i>
+                            <h3>Certifications</h3>
+                        </div>
+                        <div class="milestone-list">
+                            <div class="milestone-item-row">
+                                <div class="milestone-item-dot"></div>
+                                <div class="milestone-item-text">
+                                    <h4>Post Graduate Diploma in Advanced Computing</h4>
+                                    <p>C-DAC Pune · 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements Card -->
+                    <div class="milestone-card reveal reveal-right">
+                        <div class="milestone-card-header">
+                            <i data-lucide="trophy" class="milestone-icon text-gold"></i>
+                            <h3>Achievements</h3>
+                        </div>
+                        <div class="milestone-list">
+                            <div class="milestone-item-row">
+                                <div class="milestone-item-dot"></div>
+                                <div class="milestone-item-text">
+                                    <h4>Academic Performer Award</h4>
+                                    <p>Consistently ranked among the top academic performers throughout the Engineering program.</p>
+                                </div>
+                            </div>
+                            <div class="milestone-item-row">
+                                <div class="milestone-item-dot"></div>
+                                <div class="milestone-item-text">
+                                    <h4>College Topper in Diploma</h4>
+                                    <p>Awarded for outstanding academic excellence in Electronics & Telecommunication.</p>
+                                </div>
+                            </div>
+                            <div class="milestone-item-row">
+                                <div class="milestone-item-dot"></div>
+                                <div class="milestone-item-text">
+                                    <h4>Ranked 1st in Maharashtra</h4>
+                                    <p>Scored 100/100 in Mathematics during the Diploma program, ranking #1 statewide.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">Have an opportunity or just want to say hello? My inbox is always open.</p>
+                </div>
+
+                <div class="contact-content centered">
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info reveal reveal-up">
+                        <div class="contact-info-card">
+                            <h3>Contact Information</h3>
+                            <p>Feel free to reach out via email, phone, or LinkedIn. I am always happy to discuss new opportunities, collaboration ideas, or software development topics.</p>
+                            
+                            <div class="contact-links-list">
+                                <a href="mailto:dhanashreepthube@gmail.com" class="contact-detail-item" id="contact-link-email">
+                                    <div class="detail-icon"><i data-lucide="mail"></i></div>
+                                    <div class="detail-text">
+                                        <span>Email</span>
+                                        <strong>dhanashreepthube@gmail.com</strong>
+                                    </div>
+                                </a>
+                                
+                                <a href="tel:+919503045707" class="contact-detail-item" id="contact-link-phone">
+                                    <div class="detail-icon"><i data-lucide="phone"></i></div>
+                                    <div class="detail-text">
+                                        <span>Phone</span>
+                                        <strong>+91 9503045707</strong>
+                                    </div>
+                                </a>
+                                
+                                <div class="contact-detail-item">
+                                    <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                                    <div class="detail-text">
+                                        <span>Location</span>
+                                        <strong>Pune, India</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-socials-group">
+                                <h4>Find me on social media:</h4>
+                                <div class="social-links-grid">
+                                    <a href="https://www.linkedin.com/in/dhanashree-thube" target="_blank" rel="noopener noreferrer" class="social-btn" id="contact-social-linkedin">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn
+                                    </a>
+                                    <a href="https://github.com/dhanashreethube" target="_blank" rel="noopener noreferrer" class="social-btn" id="contact-social-github">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer-copyright">
+                &copy; 2026 Dhanashree Thube. All rights reserved.
+            </p>
+            <p class="footer-credits">
+                Handcrafted with passion & code.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="index.js"></script>
+</body>
+</html>
